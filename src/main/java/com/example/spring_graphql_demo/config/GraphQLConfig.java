@@ -1,7 +1,5 @@
 package com.example.spring_graphql_demo.config;
 
-import com.example.spring_graphql_demo.scalar.DateScalar;
-import graphql.schema.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import graphql.schema.GraphQLScalarType;
@@ -13,10 +11,6 @@ import java.time.format.DateTimeFormatter;
 
 @Configuration
 public class GraphQLConfig {
-    @Bean
-    public GraphQLScalarType dateScalar() {
-        return DateScalar.DATE;
-    }
 
     @Bean
     public RuntimeWiringConfigurer runtimeWiringConfigurer() {
