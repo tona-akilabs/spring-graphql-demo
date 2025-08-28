@@ -1,0 +1,12 @@
+scalar Date
+
+type Query {
+    projectById(id: ID!): Project
+
+    all: [Book]
+    bookById(id: ID!): Book
+}
+
+type Mutation {
+    addBook(title: String!, author: String!): Book
+}
