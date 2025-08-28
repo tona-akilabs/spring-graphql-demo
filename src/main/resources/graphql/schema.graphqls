@@ -1,6 +1,7 @@
 scalar Date
 
 type Query {
+    projects(page: Int!, size: Int!): ProjectPagination
     projectById(id: ID!): Project
 
     all: [Book]

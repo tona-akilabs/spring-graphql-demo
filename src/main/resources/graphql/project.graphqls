@@ -5,3 +5,11 @@ type Project {
     name: String
     creationDate: Date
 }
+
+type ProjectPagination {
+    content: [Project!]!
+    totalElements: Int!
+    totalPages: Int!
+    page: Int!
+    size: Int!
+}
